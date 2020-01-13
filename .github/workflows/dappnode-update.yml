@@ -13,9 +13,7 @@ jobs:
     - name: Cloning nethermind repo and fetching latest tag
       run: |
         git clone https://github.com/NethermindEth/nethermind.git
-        cd nethermind/
-        git fetch --unshallow
-        git describe --tags > git-tag
+        cd nethermind/ && git describe --tags > git-tag
     - name: Updating package and Nethermind versions
       run: |
         GIT_TAG="$(tail nethermind/git-tag)"
