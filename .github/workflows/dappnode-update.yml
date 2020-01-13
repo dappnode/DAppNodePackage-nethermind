@@ -1,12 +1,12 @@
-name: Update Documentation
+name: Update Manifest file
 
 on:
     repository_dispatch:
       types: dappnode_update
 
 jobs:
-  neth-docs:
-    name: Update Documentation
+  dappnode-update:
+    name: Update Manifest file
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
