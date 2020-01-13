@@ -5,5 +5,21 @@
     "uploadedTo": {
       "dappnode": "Tue, 24 Dec 2019 09:54:20 GMT"
     }
+  },
+  "0.0.2": {
+    "hash": "/ipfs/QmSiRJKAMQUWiWSKgXVcvdMdLs1ntd4hjD2io4E2jHGqWz",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Thu, 02 Jan 2020 13:33:05 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.2&h=%2Fipfs%2FQmPxmBUgyHGhb5gDNbd58kfqmTvcSeM3RJ7HaF5T3ws2f1"
+  },
+  "0.0.3": {
+    "hash": "/ipfs/QmZCBWtUhaPNf4bFGvPYvh3hqHiTtYFpqiH1RWC4m1kV9x",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Thu, 02 Jan 2020 13:44:58 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.3&h=%2Fipfs%2FQmZCBWtUhaPNf4bFGvPYvh3hqHiTtYFpqiH1RWC4m1kV9x"
   }
 }
