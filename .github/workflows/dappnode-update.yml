@@ -22,6 +22,7 @@ jobs:
         VERSION_UPDATED="$(./semver-update.sh patch $VERSION)"
         sed -i "3s/.*/  \"version\": \"${VERSION_UPDATED}\",/" dappnode_package.json
         sed -i "4s/.*/  \"upstreamVersion\": \"v${GIT_TAG}\",/" dappnode_package.json
+        sed -i "5s/.*/    image: 'nethermind.public.dappnode.eth:${VERSION_UPDATED}'/" docker-compose.yml
         rm -rf nethermind/
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v1
