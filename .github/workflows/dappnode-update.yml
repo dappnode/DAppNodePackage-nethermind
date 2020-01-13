@@ -17,9 +17,12 @@ jobs:
     - name: Updating package and Nethermind versions
       run: |
         GIT_TAG="$(tail nethermind/git-tag)"
-        VERSION="$(./semver-update.sh)"
-        sed -i "3s/.*/  \"version\": \"${VERSION}\",/" dappnode_package.json
+        VER="$(sed -n '3p' dappnode_package.json)"
+        VERSION=${VER:14:-2}
+        VERSION_UPDATED="$(./semver-update.sh patch $VERSION)"
+        sed -i "3s/.*/  \"version\": \"${VERSION_UPDATED}\",/" dappnode_package.json
         sed -i "4s/.*/  \"upstreamVersion\": \"v${GIT_TAG}\",/" dappnode_package.json
+        rm -rf nethermind/
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v1
       with:
