@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - 
     - name: Cloning nethermind repo and fetching latest tag
       run: |
         git clone https://github.com/NethermindEth/nethermind.git
