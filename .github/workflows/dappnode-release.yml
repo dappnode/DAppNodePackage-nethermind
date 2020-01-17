@@ -14,5 +14,6 @@ jobs:
     - name: Installing dappnodesdk and publishing package
       run: |
         sudo chown -R $USER /usr/local/lib/node_modules
-        sudo npm install -g @dappnode/dappnodesdk
-        GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} dappnodesdk publish patch -p infura --dappnode_team_preset
+        sudo npm install @dappnode/dappnodesdk
+        cd node_modules/@dappnode/dappnodesdk/src
+        node GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} dappnodesdk.js publish patch -p infura --dappnode_team_preset
