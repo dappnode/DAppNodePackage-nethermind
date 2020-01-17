@@ -14,6 +14,6 @@ jobs:
     - name: Installing dappnodesdk and publishing package
       run: |
         sudo npm install @dappnode/dappnodesdk
-        cp * /home/runner/work/DAppNodePackage-nethermind/DAppNodePackage-nethermind/node_modules/@dappnode/dappnodesdk/src
+        rsync -av --progress . /home/runner/work/DAppNodePackage-nethermind/DAppNodePackage-nethermind/node_modules/@dappnode/dappnodesdk/src --exclude node_modules
         cd node_modules/@dappnode/dappnodesdk/src
         node dappnodesdk.js publish patch -p infura --dappnode_team_preset GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
