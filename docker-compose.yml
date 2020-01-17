@@ -2,7 +2,7 @@ version: '3.4'
 services:
   nethermind.public.dappnode.eth:
     build: ./build
-    image: 'nethermind.public.dappnode.eth:0.0.3'
+    image: 'nethermind.public.dappnode.eth:0.0.4'
     restart: always
     volumes:
       - 'data:/data'
