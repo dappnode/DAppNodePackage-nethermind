@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Installing dappnodesdk and publishing package
       run: |
-        sudo chown -R $USER /usr/local/lib/node_modules
         sudo npm install @dappnode/dappnodesdk
-        cd node_modules/@dappnode/dappnodesdk/src
+        cp -r /home/runner/work/DAppNodePackage-nethermind/DAppNodePackage-nethermind /home/runner/work/node_modules/@dappnode/dappnodesdk/src
+        cd /home/runner/work/node_modules/@dappnode/dappnodesdk/src
         node dappnodesdk.js publish patch -p infura --dappnode_team_preset GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
