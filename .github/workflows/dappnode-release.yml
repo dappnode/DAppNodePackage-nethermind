@@ -16,4 +16,4 @@ jobs:
         sudo npm install @dappnode/dappnodesdk
         rsync -av --progress . /home/runner/work/DAppNodePackage-nethermind/DAppNodePackage-nethermind/node_modules/@dappnode/dappnodesdk/src --exclude node_modules
         cd node_modules/@dappnode/dappnodesdk/src
-        node dappnodesdk.js publish patch -p infura --dappnode_team_preset GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        node dappnodesdk.js publish patch --provider http://ipfs.dappnode.io:5001 --dappnode_team_preset GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
