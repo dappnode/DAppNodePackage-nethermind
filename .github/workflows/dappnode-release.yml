@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Installing dappnodesdk
-      run: sudo npm install -g @dappnode/dappnodesdk
-    - name: Publishing dappnode package
-      run: sudo GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} dappnodesdk publish patch -p infura --dappnode_team_preset
+    - name: Installing dappnodesdk and publishing package
+      run: |
+        sudo npm install -g @dappnode/dappnodesdk
+        sudo GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} dappnodesdk publish patch -p infura --dappnode_team_preset
