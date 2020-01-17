@@ -13,5 +13,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Installing dappnodesdk and publishing package
       run: |
-        sudo npm install @dappnode/dappnodesdk
-        sudo GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} dappnodesdk publish patch -p infura --dappnode_team_preset
+        sudo chown -R $USER /usr/local/lib/node_modules
+        sudo npm install -g @dappnode/dappnodesdk
+        GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} dappnodesdk publish patch -p infura --dappnode_team_preset
