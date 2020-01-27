@@ -16,4 +16,4 @@ jobs:
         sudo npm install @dappnode/dappnodesdk
         rsync -av --progress . /home/runner/work/DAppNodePackage-nethermind/DAppNodePackage-nethermind/node_modules/@dappnode/dappnodesdk/src --exclude node_modules
         cd node_modules/@dappnode/dappnodesdk/src
-        node dappnodesdk.js TRAVIS=yes GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} dappnodesdk publish patch --dappnode_team_preset
+        node dappnodesdk.js publish patch --dappnode_team_preset TRAVIS=yes GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
