@@ -19,7 +19,7 @@
     "type": "environment",
     "name": "NETHERMIND_FAST_SYNC"
   },
-  "Pivot_Hash": {
+  "PivotHash": {
     "type": "environment",
     "name": "NETHERMIND_PIVOT_HASH"
   },
