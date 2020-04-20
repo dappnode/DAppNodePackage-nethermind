@@ -21,5 +21,37 @@
       "dappnode": "Thu, 02 Jan 2020 13:44:58 GMT"
     },
     "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.3&h=%2Fipfs%2FQmZCBWtUhaPNf4bFGvPYvh3hqHiTtYFpqiH1RWC4m1kV9x"
+  },
+  "0.0.4": {
+    "hash": "/ipfs/QmSdnzEFCCV1rSZB2kyQzFgSHuwYh3DkEHZLLAEna5WoqK",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Mon, 13 Jan 2020 18:20:20 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.4&h=%2Fipfs%2FQmSdnzEFCCV1rSZB2kyQzFgSHuwYh3DkEHZLLAEna5WoqK"
+  },
+  "0.0.5": {
+    "hash": "/ipfs/QmXH1p7MkjsbdhkvQKpbFUYd4oxEQDzz6FmYWekG4TtjmT",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Fri, 10 Apr 2020 10:25:12 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.5&h=%2Fipfs%2FQmXH1p7MkjsbdhkvQKpbFUYd4oxEQDzz6FmYWekG4TtjmT"
+  },
+  "0.0.6": {
+    "hash": "/ipfs/QmPWCqs883ywvXZDBBCEvGYmsDXJ4HtGRK3ftLFXvkdUJe",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Fri, 10 Apr 2020 10:52:51 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.6&h=%2Fipfs%2FQmPWCqs883ywvXZDBBCEvGYmsDXJ4HtGRK3ftLFXvkdUJe"
+  },
+  "0.0.7": {
+    "hash": "/ipfs/QmR2J9tFwWp38Bc8V4Qj1wwaWtskSR4WBnwbT5rMd8q8WM",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Tue, 14 Apr 2020 16:36:09 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.7&h=%2Fipfs%2FQmR2J9tFwWp38Bc8V4Qj1wwaWtskSR4WBnwbT5rMd8q8WM"
   }
 }

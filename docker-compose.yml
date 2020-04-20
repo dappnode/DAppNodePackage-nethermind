@@ -1,8 +1,11 @@
 version: '3.4'
 services:
   nethermind.public.dappnode.eth:
-    build: ./build
-    image: 'nethermind.public.dappnode.eth:0.0.4'
+    build: 
+      context: ./build
+      args:
+        - VERSION
+    image: 'nethermind.public.dappnode.eth:0.0.8'
     restart: always
     volumes:
       - 'data:/data'
@@ -16,6 +19,7 @@ services:
       - NETHERMIND_PIVOT_NUMBER
       - NETHERMIND_PIVOT_TOTAL_DIFFICULTY
       - NETHERMIND_USE_GETH_LIMITS_IN_FAST_BLOCKS=true
+      - EXTRA_OPTS
     ports:
       - '30303'
 volumes:

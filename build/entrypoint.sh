@@ -26,5 +26,7 @@ elif [ ${NETHERMIND_MODE} == "custom" ];then
     EXTRA_OPTS="--config mainnet_custom"
 fi
 
-chown nethermind:nethermind /data
-exec gosu nethermind:nethermind /nethermind/Nethermind.Runner --Init.BaseDbPath=/data ${EXTRA_OPTS} "$@"
+chown nethermind:nethermind -R /data
+chown nethermind:nethermind -R /nethermind
+
+exec gosu nethermind:nethermind /nethermind/Nethermind.Runner --Init.BaseDbPath=/data --Init.LogDirectory=/data/logs ${EXTRA_OPTS} "$@"
