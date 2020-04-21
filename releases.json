@@ -55,11 +55,11 @@
     "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.7&h=%2Fipfs%2FQmR2J9tFwWp38Bc8V4Qj1wwaWtskSR4WBnwbT5rMd8q8WM"
   },
   "0.0.8": {
-    "hash": "/ipfs/QmVu8bGWsA5HdnJpw1npYnmpREWgRHBDbBQpVyyUisKWCD",
+    "hash": "/ipfs/QmR8PfTQoeroVyDaK843KVqxudFwhGb1ZiKZFC6xFLhHv6",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Mon, 20 Apr 2020 11:33:10 GMT"
+      "remote": "Tue, 21 Apr 2020 07:34:37 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.8&h=%2Fipfs%2FQmVu8bGWsA5HdnJpw1npYnmpREWgRHBDbBQpVyyUisKWCD"
+    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.8&h=%2Fipfs%2FQmR8PfTQoeroVyDaK843KVqxudFwhGb1ZiKZFC6xFLhHv6"
   }
 }
