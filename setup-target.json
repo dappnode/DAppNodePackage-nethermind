@@ -35,8 +35,8 @@
     "type": "environment",
     "name": "NETHERMIND_USE_GETH_LIMITS_IN_FAST_BLOCKS"
   },
-  "mainnet_cfg": {
+  "custom_cfg": {
     "type": "fileUpload",
-    "path": "/nethermind/configs/mainnet.cfg"
+    "path": "/data/custom.cfg"
   }
 }

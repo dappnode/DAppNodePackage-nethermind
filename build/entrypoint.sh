@@ -23,7 +23,7 @@ elif [ ${NETHERMIND_MODE} == "advanced" ];then
         sed -i "s/.*PivotTotalDifficulty.*/    \"PivotTotalDifficulty\" : "${NETHERMIND_PIVOT_TOTAL_DIFFICULTY}",/g" ${ADVANCED_FILE}
     fi
 elif [ ${NETHERMIND_MODE} == "custom" ];then
-    EXTRA_OPTS="--config mainnet_custom"
+    EXTRA_OPTS="--config /data/custom.cfg"
 fi
 
 chown nethermind:nethermind -R /data

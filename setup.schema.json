@@ -120,7 +120,7 @@
                 "custom"
               ]
             },
-            "mainnet_cfg": {
+            "custom_cfg": {
               "type": "string",
               "format": "data-url",
               "title": "Custom configuration file",
