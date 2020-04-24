@@ -5,7 +5,7 @@ services:
       context: ./build
       args:
         - VERSION
-    image: 'nethermind.public.dappnode.eth:0.0.9'
+    image: 'nethermind.public.dappnode.eth:0.0.10'
     restart: always
     volumes:
       - 'data:/data'
