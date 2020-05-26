@@ -141,5 +141,13 @@
       "remote": "Tue, 26 May 2020 08:38:06 GMT"
     },
     "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.18&h=%2Fipfs%2FQmRVKPrr9oqvRmwZQGerazH8y7dJ6BozNgLfUYv9DAL8p2"
+  },
+  "0.0.19": {
+    "hash": "/ipfs/QmUFm9Y9BD3cA5KT9nNTtiawhP29iM12erX1d5TQEBjB66",
+    "type": "directory",
+    "uploadedTo": {
+      "remote": "Tue, 26 May 2020 17:03:47 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.19&h=%2Fipfs%2FQmUFm9Y9BD3cA5KT9nNTtiawhP29iM12erX1d5TQEBjB66"
   }
 }
