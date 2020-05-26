@@ -135,11 +135,11 @@
     "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.17&h=%2Fipfs%2FQmW2KJprw9RxirR4pW7XDiUi73THYpZHfhdSPW8K9kisAm"
   },
   "0.0.18": {
-    "hash": "/ipfs/QmW7YArbjLtoe8BSF3hFSSzNpY38mEaoZ7JucnxwUzPjov",
+    "hash": "/ipfs/QmRVKPrr9oqvRmwZQGerazH8y7dJ6BozNgLfUYv9DAL8p2",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Mon, 25 May 2020 20:55:49 GMT"
+      "remote": "Tue, 26 May 2020 08:38:06 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.18&h=%2Fipfs%2FQmW7YArbjLtoe8BSF3hFSSzNpY38mEaoZ7JucnxwUzPjov"
+    "link": "http://my.dappnode/#/sdk/publish/r=nethermind.public.dappnode.eth&v=0.0.18&h=%2Fipfs%2FQmRVKPrr9oqvRmwZQGerazH8y7dJ6BozNgLfUYv9DAL8p2"
   }
 }
