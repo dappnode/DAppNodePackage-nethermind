@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 ADVANCED_FILE=/nethermind/configs/mainnet_advanced.cfg

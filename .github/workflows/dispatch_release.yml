@@ -105,16 +105,6 @@ jobs:
           asset_name: docker-compose.yml
           asset_content_type: 'application/octet-stream'
       
-      - name: Upload release content-hash file
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: ./build_${{ steps.next-release.outputs.DNP_VERSION }}/content-hash
-          asset_name: content-hash
-          asset_content_type: 'application/octet-stream'
-      
       - name: Commit changes
         run: |
             git config --global user.email "eduadiez@gmail.com"
