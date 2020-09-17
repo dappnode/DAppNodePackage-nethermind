@@ -4,8 +4,8 @@ services:
     build:
       context: ./build
       args:
-        - VERSION
-    image: 'nethermind.public.dappnode.eth:0.0.21'
+        - UPSTREAM_VERSION
+    image: 'nethermind.public.dappnode.eth:0.0.22'
     restart: always
     volumes:
       - 'data:/data'
