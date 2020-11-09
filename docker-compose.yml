@@ -1,14 +1,14 @@
-version: '3.4'
+version: "3.4"
 services:
   nethermind.public.dappnode.eth:
     build:
       context: ./build
       args:
-        - UPSTREAM_VERSION
-    image: 'nethermind.public.dappnode.eth:0.0.21'
+        - UPSTREAM_VERSION=1.9.22
+    image: "nethermind.public.dappnode.eth:0.0.23"
     restart: always
     volumes:
-      - 'data:/data'
+      - "data:/data"
     environment:
       - NETHERMIND_MODE=normal
       - NETHERMIND_DOWNLOAD_BODIES_IN_FAST_SYNC=true
@@ -21,6 +21,6 @@ services:
       - NETHERMIND_USE_GETH_LIMITS_IN_FAST_BLOCKS=true
       - EXTRA_OPTS
     ports:
-      - '30303'
+      - "30303"
 volumes:
   data: {}
