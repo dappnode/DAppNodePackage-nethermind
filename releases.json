@@ -173,5 +173,12 @@
       "http://ipfs.dappnode.io": "Mon, 30 Nov 2020 23:34:19 GMT"
     },
     "link": "https://dappnode.github.io/sdk-publish/?r=nethermind.public.dappnode.eth&v=0.0.22&h=%2Fipfs%2FQmbQtUMgHpBYJRpF6RfRBiyypQGRmXhBjbvycSnYXVgf5L"
+  },
+  "1.0.1": {
+    "hash": "/ipfs/QmRsg8UV2eCU3DLsdfoWoxN9wzk4VFQium3t5JWH33tFAQ",
+    "uploadedTo": {
+      "http://ipfs.dappnode.io": "Tue, 01 Dec 2020 13:53:40 GMT"
+    },
+    "link": "https://dappnode.github.io/sdk-publish/?r=nethermind.public.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmRsg8UV2eCU3DLsdfoWoxN9wzk4VFQium3t5JWH33tFAQ"
   }
 }
