@@ -4,21 +4,21 @@ services:
     build:
       context: ./build
       args:
-        - UPSTREAM_VERSION=1.9.46
+        UPSTREAM_VERSION: 1.9.46
     image: "nethermind.public.dappnode.eth:1.0.2"
     restart: always
     volumes:
       - "data:/data"
     environment:
-      - NETHERMIND_MODE=normal
-      - NETHERMIND_DOWNLOAD_BODIES_IN_FAST_SYNC=true
-      - NETHERMIND_DOWNLOAD_RECEIPTS_IN_FAST_SYNC=true
-      - NETHERMIND_FAST_BLOCKS=false
-      - NETHERMIND_FAST_SYNC=false
-      - NETHERMIND_PIVOT_HASH
-      - NETHERMIND_PIVOT_NUMBER
-      - NETHERMIND_PIVOT_TOTAL_DIFFICULTY
-      - NETHERMIND_USE_GETH_LIMITS_IN_FAST_BLOCKS=true
+      - MODE=normal
+      - DOWNLOAD_BODIES_IN_FAST_SYNC=true
+      - DOWNLOAD_RECEIPTS_IN_FAST_SYNC=true
+      - FAST_BLOCKS=false
+      - FAST_SYNC=false
+      - PIVOT_HASH
+      - PIVOT_NUMBER
+      - PIVOT_TOTAL_DIFFICULTY
+      - USE_GETH_LIMITS_IN_FAST_BLOCKS=true
       - EXTRA_OPTS
     ports:
       - "30303"
