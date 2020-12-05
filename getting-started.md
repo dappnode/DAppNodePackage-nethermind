@@ -4,4 +4,4 @@ This is your Nethermind node. You are now supporting the Ethereum network by run
 
 * If you want to learn more on how Nethermind is built and why, please check their website: [nethermind.io](https://nethermind.io/)
 * Join their community in [Gitter](https://gitter.im/nethermindeth/nethermind)
-* And of course, make sure you join our DAppNode community in our [Riot](riot.im/app/#/room/#DAppNode:matrix.org) or [Telegram](https://t.me/dappnode)
+* And of course, make sure you join our DAppNode community in our [Forum](https://forum.dappnode.io) or [Discord](https://discord.dappnode.io)
