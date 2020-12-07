@@ -5,7 +5,7 @@ services:
       context: ./build
       args:
         UPSTREAM_VERSION: 1.9.46
-    image: "nethermind.public.dappnode.eth:1.0.2"
+    image: "nethermind.public.dappnode.eth:1.0.3"
     restart: always
     volumes:
       - "data:/data"
