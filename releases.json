@@ -182,10 +182,10 @@
     "link": "https://dappnode.github.io/sdk-publish/?r=nethermind.public.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmYQtrZ51T9by8Wmfdg4jhCBScuHLtRoTwL7RFUG2GepmR"
   },
   "1.0.3": {
-    "hash": "/ipfs/QmYD63eXt8HdxaDCnCKYEKwoQTWCQBB6tdMkSz4Z7X8Uvh",
+    "hash": "/ipfs/QmeK9XZaWuLZGMDZNmcLmVK1vUUhZFWz1iRGSNVT4UCcXw",
     "uploadedTo": {
-      "http://ipfs.dappnode.io": "Mon, 04 Jan 2021 12:13:20 GMT"
+      "http://ipfs.dappnode.io": "Wed, 06 Jan 2021 15:06:27 GMT"
     },
-    "link": "https://dappnode.github.io/sdk-publish/?r=nethermind.public.dappnode.eth&v=1.0.3&h=%2Fipfs%2FQmYD63eXt8HdxaDCnCKYEKwoQTWCQBB6tdMkSz4Z7X8Uvh"
+    "link": "https://dappnode.github.io/sdk-publish/?r=nethermind.public.dappnode.eth&v=1.0.3&h=%2Fipfs%2FQmeK9XZaWuLZGMDZNmcLmVK1vUUhZFWz1iRGSNVT4UCcXw"
   }
 }
