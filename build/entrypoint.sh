@@ -5,6 +5,8 @@ ADVANCED_FILE=/nethermind/configs/mainnet_advanced.cfg
 
 if [ "${MODE}" == "archive" ];then
     EXTRA_OPTS="--config mainnet_archive"
+elif [ "${MODE}" == "beam" ];then
+    EXTRA_OPTS="--config mainnet_beam"
 elif [ "${MODE}" == "advanced" ];then
     EXTRA_OPTS="--config mainnet_advanced"
     #Edit selected options
