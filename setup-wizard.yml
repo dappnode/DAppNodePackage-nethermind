@@ -11,9 +11,15 @@ fields:
       installation of the node and its environment variables. The methods are:
 
 
-      **Normal** (recommended): You will sync and run an Ethereum full node. You
-      will be able to broadcast transactions to the network and use it normally
+      **Normal** (recommended): You will fast-sync and run an Ethereum full node.
+      You will be able to broadcast transactions to the network and use it normally
       as your main node.
+
+
+      **BeamSync** (experimental): You will beam-sync an Ethereum full node. It's
+      the same as fast-sync ("normal") but also allows you to query the chain within
+      the first few minutes from starting. You will be able to broadcast
+      transactions to the network and use it normally as your main node.
 
 
       **Archive** (NOT recommended): An Archive node downloads and stores every
@@ -34,6 +40,7 @@ fields:
       github](https://github.com/NethermindEth/nethermind/tree/master/src/Nethermind/Nethermind.Runner/configs).
     enum:
       - "normal"
+      - "beamsync"
       - "archive"
       - "advanced"
       - "custom"
