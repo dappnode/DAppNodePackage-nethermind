@@ -12,6 +12,8 @@
   "contributors": [
     "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
   ],
+  "upstreamRepo": "NethermindEth/nethermind",
+  "upstreamArg": "UPSTREAM_VERSION",
   "categories": ["Blockchain"],
   "links": {
     "endpoint": "http://nethermind.public.dappnode:8545",
