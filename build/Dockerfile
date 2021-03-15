@@ -3,7 +3,7 @@ FROM nethermind/nethermind:${UPSTREAM_VERSION}
 
 COPY entrypoint.sh /entrypoint.sh
 
-RUN apt-get update && apt-get install -y jq moreutils && \
+RUN apt-get update && apt-get install -y jq moreutils curl && \
     curl -LJO https://raw.githubusercontent.com/NethermindEth/nethermind/master/src/Nethermind/Nethermind.Runner/configs/mainnet.cfg && \
     curl -LJO https://raw.githubusercontent.com/NethermindEth/nethermind/master/src/Nethermind/Nethermind.Runner/configs/mainnet_beam.cfg && \
     curl -LJO https://raw.githubusercontent.com/NethermindEth/nethermind/master/src/Nethermind/Nethermind.Runner/configs/mainnet_archive.cfg
