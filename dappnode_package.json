@@ -1,5 +1,5 @@
 {
-  "name": "nethermind.dnp.dappnode.eth",
+  "name": "nethermind.public.dappnode.eth",
   "version": "1.0.9",
   "upstreamVersion": "1.10.73",
   "shortDescription": "Nethermind Ethereum client",
