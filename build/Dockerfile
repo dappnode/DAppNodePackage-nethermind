@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y jq moreutils curl && \
     curl -LJO https://raw.githubusercontent.com/NethermindEth/nethermind/master/src/Nethermind/Nethermind.Runner/configs/mainnet_archive.cfg
 
 RUN cat mainnet.cfg | jq '.JsonRpc.Host  = "0.0.0.0"' | jq ".Init.WebSocketsEnabled = true" | jq ".JsonRpc.Enabled  = true" | sponge mainnet.cfg && \
-    cat mainnet.cfg | jq '.JsonRpc.Host  = "0.0.0.0"' | jq ".Init.WebSocketsEnabled = true" | jq ".JsonRpc.Enabled  = true" | sponge mainnet_beam.cfg && \
+    cat mainnet_beam.cfg | jq '.JsonRpc.Host  = "0.0.0.0"' | jq ".Init.WebSocketsEnabled = true" | jq ".JsonRpc.Enabled  = true" | sponge mainnet_beam.cfg && \
     cat mainnet_archive.cfg | jq '.JsonRpc.Host  = "0.0.0.0"' | jq ".Init.WebSocketsEnabled = true" | jq ".JsonRpc.Enabled  = true" | sponge mainnet_archive.cfg && \
     cp mainnet.cfg mainnet_advanced.cfg
 
