@@ -1,26 +1,25 @@
 version: "3.4"
 services:
-  nethermind.public.dappnode.eth:
+  nethermind.dnp.dappnode.eth:
     build:
       context: ./build
       args:
         UPSTREAM_VERSION: 1.10.73
-    image: "nethermind-xdai.public.dappnode.eth:1.0.9"
+    image: "nethermind.dnp.dappnode.eth.nethermind-xdai.dnp.dappnode.eth:1.0.0"
     restart: unless-stopped
     volumes:
-      - "data:/data"
+      - "data:/nethermind"
     environment:
-      - MODE=normal
-      - DOWNLOAD_BODIES_IN_FAST_SYNC=true
-      - DOWNLOAD_RECEIPTS_IN_FAST_SYNC=true
-      - FAST_BLOCKS=false
-      - FAST_SYNC=false
-      - PIVOT_HASH
-      - PIVOT_NUMBER
-      - PIVOT_TOTAL_DIFFICULTY
-      - USE_GETH_LIMITS_IN_FAST_BLOCKS=true
-      - EXTRA_OPTS
+      NETHERMIND_CONFIG: xdai
+      NETHERMIND_SYNCCONFIG_FASTSYNC: "true"
+      NETHERMIND_JSONRPCCONFIG_ENABLED: "true"
+      NETHERMIND_JSONRPCCONFIG_HOST: 0.0.0.0
+      NETHERMIND_INITCONFIG_WEBSOCKETSENABLED: "true"
+      EXTRA_OPTS: null
     ports:
-      - "30303"
+      - 30303/tcp
+      - 30303/udp
+      - 30304/tcp
+      - 30304/udp
 volumes:
   data: {}
