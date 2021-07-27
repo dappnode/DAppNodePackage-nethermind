@@ -16,12 +16,6 @@ fields:
       as your main node.
 
 
-      **BeamSync** (experimental): You will beam-sync an Ethereum full node. It's
-      the same as fast-sync ("normal") but also allows you to query the chain within
-      the first few minutes from starting. You will be able to broadcast
-      transactions to the network and use it normally as your main node.
-
-
       **Archive** (NOT recommended): An Archive node downloads and stores every
       state. It is **NOT** recommended unless you want to query the node for
       very specific informatin or for research purposes. 
@@ -40,7 +34,6 @@ fields:
       github](https://github.com/NethermindEth/nethermind/tree/master/src/Nethermind/Nethermind.Runner/configs).
     enum:
       - "normal"
-      - "beamsync"
       - "archive"
       - "advanced"
       - "custom"
