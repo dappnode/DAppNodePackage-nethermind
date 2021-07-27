@@ -1,11 +1,11 @@
 version: "3.4"
 services:
-  nethermind.dnp.dappnode.eth:
+  nethermind-xdai.dnp.dappnode.eth:
     build:
       context: ./build
       args:
         UPSTREAM_VERSION: 1.10.73
-    image: "nethermind.dnp.dappnode.eth.nethermind-xdai.dnp.dappnode.eth:1.0.0"
+    image: "nethermind-xdai.dnp.dappnode.eth:1.0.0"
     restart: unless-stopped
     volumes:
       - "data:/nethermind"
