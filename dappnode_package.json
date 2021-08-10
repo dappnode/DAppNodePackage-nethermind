@@ -1,35 +1,30 @@
 {
-    "name": "nethermind-xdai.dnp.dappnode.eth",
-    "version": "1.0.0",
-    "upstreamVersion": "1.10.73",
-    "shortDescription": "Nethermind xDai client",
-    "description": "Nethermind - The world’s fastest xDai .NET Client and P2P Data Marketplace for the decentralised future\nOur flagship .NET Core-based xDai client is all about performance and flexibility. We have built a lean, stable and feature-rich gateway to allow anyone, anywhere, to take part in the decentralised future.",
-    "type": "service",
-    "architectures": [
-        "linux/amd64",
-        "linux/arm64"
-    ],
-    "dependencies": {},
-    "chain": "ethereum",
-    "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
-    "contributors": [
-        "mgarciate <mgarciate@gmail.com> (https://github.com/mgarciate)"
-    ],
-    "upstreamRepo": "NethermindEth/nethermind",
-    "upstreamArg": "UPSTREAM_VERSION",
-    "categories": [
-        "Blockchain"
-    ],
-    "links": {
-        "endpoint": "http://nethermind-xdai.dappnode:8545",
-        "homepage": "https://github.com/mgarciate/DAppNodePackage-nethermind-xdai#readme"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mgarciate/DAppNodePackage-nethermind-xdai.git"
-    },
-    "bugs": {
-        "url": "https://github.com/mgarciate/DAppNodePackage-nethermind-xdai/issues"
-    },
-    "license": "GLP-3.0"
+  "name": "nethermind-xdai.dnp.dappnode.eth",
+  "version": "1.0.0",
+  "upstreamVersion": "1.10.79b",
+  "shortDescription": "Nethermind xDai client",
+  "description": "Nethermind - The world’s fastest xDai .NET Client and P2P Data Marketplace for the decentralised future\nOur flagship .NET Core-based xDai client is all about performance and flexibility. We have built a lean, stable and feature-rich gateway to allow anyone, anywhere, to take part in the decentralised future.",
+  "type": "service",
+  "architectures": ["linux/amd64", "linux/arm64"],
+  "dependencies": {},
+  "chain": "ethereum",
+  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+  "contributors": [
+    "mgarciate <mgarciate@gmail.com> (https://github.com/mgarciate)"
+  ],
+  "upstreamRepo": "NethermindEth/nethermind",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "categories": ["Blockchain"],
+  "links": {
+    "endpoint": "http://nethermind-xdai.dappnode:8545",
+    "homepage": "https://github.com/mgarciate/DAppNodePackage-nethermind-xdai#readme"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgarciate/DAppNodePackage-nethermind-xdai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mgarciate/DAppNodePackage-nethermind-xdai/issues"
+  },
+  "license": "GLP-3.0"
 }
