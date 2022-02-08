@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-test:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     name: Build test
     if: github.event_name != 'push'
     steps:
