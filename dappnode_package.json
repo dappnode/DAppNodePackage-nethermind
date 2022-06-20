@@ -12,6 +12,20 @@
   "contributors": [
     "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
   ],
+  "exposable": [
+    {
+      "name:": "Nethermind JSON RPC",
+      "description": "JSON RPC endpoint for Nethermind Ethereum mainnet",
+      "serviceName": "nethermind",
+      "port": 8545
+    },
+    {
+      "name:": "Nethermind JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Nethermind Ethereum mainnet",
+      "serviceName": "nethermind",
+      "port": 8545
+    }
+  ],
   "upstreamRepo": "NethermindEth/nethermind",
   "upstreamArg": "UPSTREAM_VERSION",
   "categories": ["Blockchain"],
