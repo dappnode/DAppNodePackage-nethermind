@@ -14,13 +14,13 @@
   ],
   "exposable": [
     {
-      "name:": "Nethermind JSON RPC",
+      "name": "Nethermind JSON RPC",
       "description": "JSON RPC endpoint for Nethermind Ethereum mainnet",
       "serviceName": "nethermind",
       "port": 8545
     },
     {
-      "name:": "Nethermind JSON RPC (WS)",
+      "name": "Nethermind JSON RPC (WS)",
       "description": "JSON RPC WebSocket endpoint for Nethermind Ethereum mainnet",
       "serviceName": "nethermind",
       "port": 8545
