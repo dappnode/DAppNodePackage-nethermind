@@ -12,6 +12,7 @@ services:
     volumes:
       - "data:/data"
     environment:
+      MODE: normal
       NETHERMIND_CONFIG: mainnet
       NETHERMIND_SYNCCONFIG_FASTSYNC: "true"
       NETHERMIND_JSONRPCCONFIG_ENABLED: "true"

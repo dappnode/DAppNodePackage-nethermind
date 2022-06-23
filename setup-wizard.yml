@@ -37,7 +37,6 @@ fields:
       - "archive"
       - "advanced"
       - "custom"
-    required: true
 
   - id: DownloadBodiesInFastSync
     target:
@@ -113,7 +112,7 @@ fields:
     description: >-
       Total Difficulty of the pivot block for the Fast Blocks sync (not - this is total difficulty and not difficulty). default value: null
     if: { "mode": { "enum": ["advanced"] } }
-  
+
   - id: UseGethLimitsInFastBlocks
     target:
       type: environment
