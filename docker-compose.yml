@@ -20,8 +20,7 @@ services:
       NETHERMIND_INITCONFIG_WEBSOCKETSENABLED: "true"
       EXTRA_OPTS: null
     ports:
-      - 30303/tcp
-      - 30303/udp
+      - "30305:30303"
       - 30304/tcp
       - 30304/udp
 volumes:
