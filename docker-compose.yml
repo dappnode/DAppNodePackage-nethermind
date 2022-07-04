@@ -18,11 +18,11 @@ services:
       NETHERMIND_JSONRPCCONFIG_ENABLED: "true"
       NETHERMIND_JSONRPCCONFIG_HOST: 0.0.0.0
       NETHERMIND_INITCONFIG_WEBSOCKETSENABLED: "true"
-      EXTRA_OPTS: null
+      NETHERMIND_NETWORKCONFIG_DISCOVERYPORT: 30314
+      NETHERMIND_NETWORKCONFIG_P2PPORT: 30314
+      EXTRA_OPTS: ""
     ports:
-      - 30303/tcp
-      - 30303/udp
-      - 30304/tcp
-      - 30304/udp
+      - "30314:30314/udp"
+      - "30314:30314/tcp"
 volumes:
   data: {}
