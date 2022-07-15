@@ -43,5 +43,5 @@
   "bugs": {
     "url": "https://github.com/dappnode/DAppNodePackage-nethermind/issues"
   },
-  "license": "GPL-3.0"
+  "license": "LGPL-3.0"
 }
