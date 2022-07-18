@@ -5,7 +5,7 @@ services:
       context: .
       args:
         UPSTREAM_VERSION: 1.13.4
-    image: "nethermind.public.dappnode.eth:1.0.9"
+    image: "nethermind-ropsten.public.dappnode.eth:1.0.9"
     restart: unless-stopped
     security_opt:
       - "seccomp:unconfined"
@@ -13,7 +13,7 @@ services:
       - "data:/data"
     environment:
       MODE: normal
-      NETHERMIND_CONFIG: mainnet
+      NETHERMIND_CONFIG: ropsten
       NETHERMIND_SYNCCONFIG_FASTSYNC: "true"
       NETHERMIND_JSONRPCCONFIG_ENABLED: "true"
       NETHERMIND_JSONRPCCONFIG_HOST: 0.0.0.0

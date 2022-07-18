@@ -1,5 +1,5 @@
 {
-  "name": "nethermind.public.dappnode.eth",
+  "name": "nethermind-ropsten.public.dappnode.eth",
   "version": "1.0.9",
   "upstreamVersion": "1.13.4",
   "shortDescription": "Nethermind Ethereum client",
@@ -30,7 +30,7 @@
   "upstreamArg": "UPSTREAM_VERSION",
   "categories": ["Blockchain"],
   "links": {
-    "endpoint": "http://nethermind.public.dappnode:8545",
+    "endpoint": "http://nethermind-ropsten.public.dappnode:8545",
     "homepage": "https://github.com/dappnode/DAppNodePackage-nethermind#readme"
   },
   "repository": {
