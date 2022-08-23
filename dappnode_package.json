@@ -9,7 +9,9 @@
   "dependencies": {},
   "chain": "ethereum",
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
-  "contributors": ["Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"],
+  "contributors": [
+    "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
+  ],
   "exposable": [
     {
       "name": "Nethermind JSON RPC",
