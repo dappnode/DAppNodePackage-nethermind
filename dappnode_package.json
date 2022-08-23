@@ -9,9 +9,7 @@
   "dependencies": {},
   "chain": "ethereum",
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
-  "contributors": [
-    "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
-  ],
+  "contributors": ["Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"],
   "exposable": [
     {
       "name": "Nethermind JSON RPC",
@@ -30,7 +28,8 @@
   "upstreamArg": "UPSTREAM_VERSION",
   "categories": ["Blockchain"],
   "links": {
-    "endpoint": "http://nethermind.public.dappnode:8545",
+    "api": "http://nethermind.public.dappnode:8545",
+    "api-engine": "http://nethermind.public.dappnode:8511",
     "homepage": "https://github.com/dappnode/DAppNodePackage-nethermind#readme"
   },
   "repository": {
