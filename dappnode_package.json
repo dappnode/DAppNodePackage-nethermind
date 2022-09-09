@@ -31,7 +31,7 @@
   "categories": ["Blockchain"],
   "links": {
     "api": "http://nethermind.public.dappnode:8545",
-    "api-engine": "http://nethermind.public.dappnode:8511",
+    "api-engine": "http://nethermind.public.dappnode:8551",
     "homepage": "https://github.com/dappnode/DAppNodePackage-nethermind#readme"
   },
   "repository": {
