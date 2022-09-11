@@ -4,7 +4,7 @@ services:
     build:
       context: .
       args:
-        UPSTREAM_VERSION: 1.14.0
+        UPSTREAM_VERSION: 1.14.1
     image: "nethermind.nethermind.public.dappnode.eth:1.0.9"
     restart: unless-stopped
     security_opt:
