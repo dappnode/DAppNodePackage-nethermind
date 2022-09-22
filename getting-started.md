@@ -2,6 +2,9 @@
 
 Nethermind is now ready for the merge!
 
+If you are enabled the UI: you can access by clicking on [Nethermind UI](http://nethermind.public.dappnode:8551/healthchecks-ui)
+If you want to enable it you can do it if you go to config section and enable the below option.
+
 There are now two RPC APIs in Execution Clients:
 
 1. Querying API `http://nethermind.public.dappnode:8545`. Use this endpoint to query transactions on your node and connect your web3 wallet.

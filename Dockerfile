@@ -6,5 +6,6 @@ ENTRYPOINT [ "sh", "-c", "exec ./Nethermind.Runner \
   --JsonRpc.Enabled=true \
   --JsonRpc.JwtSecretFile=/jwtsecret \ 
   --Init.BaseDbPath=/data \
+  --HealthChecks.Enabled true \
   --Init.LogDirectory=/data/logs \
   $EXTRA_OPTS" ]
