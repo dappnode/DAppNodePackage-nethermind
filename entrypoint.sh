@@ -23,6 +23,9 @@ case "$_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_MAINNET" in
   ;;
 esac
 
+apt update
+apt install -y curl
+
 # Print the jwt to the dappmanager
 JWT=$(cat $JWT_PATH)
 curl -X POST "http://my.dappnode/data-send?key=jwt&data=${JWT}"
