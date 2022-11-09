@@ -11,27 +11,27 @@ fields:
       installation of the node and its environment variables. The methods are:
 
 
-      **Normal** (recommended): You will fast-sync and run an Ethereum full node.
+      **Normal** (Recommended): You will fast-sync and run an Ethereum full node.
       You will be able to broadcast transactions to the network and use it normally
       as your main node.
 
 
-      **Archive** (NOT recommended): An Archive node downloads and stores every
+      **Archive** (NOT Recommended): An Archive node downloads and stores every
       state. It is **NOT** recommended unless you want to query the node for
       very specific informatin or for research purposes. 
 
 
-      **Advanced** (NOT recommended): You will be able to select different
+      **Advanced** (NOT Recommended): You will be able to select different
       parameters and configure them at will. Please refer to the
       [documentation](https://nethermind.readthedocs.io/en/latest/configuration.html)
       for further explanation.
 
 
-      **Custom**: This mode needs a configuration file (.cfg) that will load
-      particular settings. This allows you to use this client to set up a Goerli
-      Archive node, an xDAi node and others. You can find examples of .cfg files
-      in [Nethermind's
-      github](https://github.com/NethermindEth/nethermind/tree/master/src/Nethermind/Nethermind.Runner/configs).
+      **Custom** (NOT Recommended): This mode needs a configuration file (.cfg) that will load
+      particular settings. This allows you to use this client to set up a custom config, do not use this setting unless you are an advanced user and know exactly what you're doing, making the wrong change can break your whole Dappnode.
+      You can find examples of .cfg files
+      on [Nethermind's
+      Github](https://github.com/NethermindEth/nethermind/tree/master/src/Nethermind/Nethermind.Runner/configs).
     enum:
       - "normal"
       - "archive"
