@@ -9,9 +9,7 @@
   "dependencies": {},
   "chain": "ethereum",
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
-  "contributors": [
-    "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
-  ],
+  "contributors": ["Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"],
   "exposable": [
     {
       "name": "Nethermind JSON RPC",
@@ -39,10 +37,16 @@
     "url": "https://github.com/dappnode/DAppNodePackage-nethermind.git"
   },
   "requirements": {
-    "minimumDappnodeVersion": "0.2.56"
+    "minimumDappnodeVersion": "0.2.60"
   },
   "bugs": {
     "url": "https://github.com/dappnode/DAppNodePackage-nethermind/issues"
   },
-  "license": "LGPL-3.0"
+  "license": "LGPL-3.0",
+  "globalEnvs": [
+    {
+      "envs": ["CONSENSUS_CLIENT_MAINNET"],
+      "services": ["nethermind"]
+    }
+  ]
 }
