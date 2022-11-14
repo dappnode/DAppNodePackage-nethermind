@@ -15,6 +15,7 @@ services:
       MODE: normal
       NETHERMIND_CONFIG: mainnet
       NETHERMIND_SYNCCONFIG_FASTSYNC: "true"
+      NETHERMIND_SYNCCONFIG_SNAPSYNC: ""
       NETHERMIND_JSONRPCCONFIG_ENABLED: "true"
       NETHERMIND_JSONRPCCONFIG_HOST: 0.0.0.0
       NETHERMIND_INITCONFIG_WEBSOCKETSENABLED: "true"
@@ -31,9 +32,5 @@ services:
       nofile:
         soft: 1000000
         hard: 1000000
-    deploy:
-      resources:
-        limits:
-          memory: 16384M
 volumes:
   data: {}
