@@ -1,7 +1,7 @@
 {
   "name": "nethermind.public.dappnode.eth",
   "version": "1.0.9",
-  "upstreamVersion": "1.14.5",
+  "upstreamVersion": "1.14.6",
   "shortDescription": "Nethermind Ethereum client",
   "description": "Nethermind - The world’s fastest Ethereum .NET Client and P2P Data Marketplace for the decentralised future\nOur flagship .NET Core-based Ethereum client is all about performance and flexibility. We have built a lean, stable and feature-rich gateway to allow anyone, anywhere, to take part in the decentralised future.",
   "type": "service",
@@ -9,7 +9,9 @@
   "dependencies": {},
   "chain": "ethereum",
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
-  "contributors": ["Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"],
+  "contributors": [
+    "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
+  ],
   "exposable": [
     {
       "name": "Nethermind JSON RPC",
