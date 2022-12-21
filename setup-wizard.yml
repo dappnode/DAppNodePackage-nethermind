@@ -139,7 +139,7 @@ fields:
       name: NETHERMIND_HEALTHCHECKSCONFIG_UIENABLED
     title: Nethermind UI
     description: >-
-      If set to `true` then you will be able to access an UI where to check basic stuff of Nethermind client
+      If set to `true` then you will be able to access a UI where to check basic stuff of Nethermind client
     enum:
       - "true"
       - "false"
