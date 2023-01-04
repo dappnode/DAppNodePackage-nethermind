@@ -39,7 +39,7 @@
     "url": "https://github.com/dappnode/DAppNodePackage-nethermind.git"
   },
   "requirements": {
-    "minimumDappnodeVersion": "0.2.60"
+    "minimumDappnodeVersion": "0.2.63"
   },
   "bugs": {
     "url": "https://github.com/dappnode/DAppNodePackage-nethermind/issues"
