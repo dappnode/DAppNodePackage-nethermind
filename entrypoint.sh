@@ -9,6 +9,10 @@ case "$_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_MAINNET" in
   echo "Using lighthouse.dnp.dappnode.eth"
   JWT_PATH="/security/lighthouse/jwtsecret.hex"
   ;;
+"lodestar.dnp.dappnode.eth")
+  echo "Using lodestar.dnp.dappnode.eth"
+  JWT_PATH="/security/lodestar/jwtsecret.hex"
+  ;;
 "teku.dnp.dappnode.eth")
   echo "Using teku.dnp.dappnode.eth"
   JWT_PATH="/security/teku/jwtsecret.hex"
