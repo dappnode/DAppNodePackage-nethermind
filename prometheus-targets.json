@@ -1,0 +1,12 @@
+[
+    {
+        "labels": {
+            "package": "nethermind.public.dappnode.eth",
+            "service": "nethermind",
+            "__metrics_path__": "/metrics"
+        },
+        "targets": [
+            "nethermind.public.dappnode:6060"
+        ]
+    }
+]
