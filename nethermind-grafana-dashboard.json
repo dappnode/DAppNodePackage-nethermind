@@ -1529,7 +1529,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(dotnet_collection_count_total{generation=\"0\",job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(dotnet_collection_count_total{generation=\"0\"}[1m])*60",
                 "format": "time_series",
                 "hide": false,
                 "instant": false,
@@ -1538,7 +1538,7 @@
                 "refId": "A"
               },
               {
-                "expr": "rate(dotnet_collection_count_total{generation=\"1\",job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(dotnet_collection_count_total{generation=\"1\"}[1m])*60",
                 "format": "time_series",
                 "hide": false,
                 "intervalFactor": 1,
@@ -1546,7 +1546,7 @@
                 "refId": "B"
               },
               {
-                "expr": "rate(dotnet_collection_count_total{generation=\"2\",job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(dotnet_collection_count_total{generation=\"2\"}[1m])*60",
                 "format": "time_series",
                 "hide": false,
                 "intervalFactor": 1,
