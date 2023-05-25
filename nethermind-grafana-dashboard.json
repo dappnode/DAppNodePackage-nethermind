@@ -101,7 +101,7 @@
         "pluginVersion": "8.1.2",
         "targets": [
           {
-            "expr": "nethermind_sync_peers{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+            "expr": "nethermind_sync_peers",
             "format": "time_series",
             "intervalFactor": 1,
             "refId": "A"
@@ -171,7 +171,7 @@
         "pluginVersion": "8.1.2",
         "targets": [
           {
-            "expr": "nethermind_blocks{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+            "expr": "nethermind_blocks",
             "format": "time_series",
             "interval": "",
             "intervalFactor": 1,
@@ -227,41 +227,41 @@
         "steppedLine": false,
         "targets": [
           {
-            "expr": "rate(nethermind_json_rpc_bytes_sent{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+            "expr": "rate(nethermind_json_rpc_bytes_sent[1m])*60",
             "interval": "",
             "legendFormat": "RPC Sent",
             "refId": "A"
           },
           {
-            "expr": "rate(nethermind_json_rpc_bytes_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+            "expr": "rate(nethermind_json_rpc_bytes_received[1m])*60",
             "hide": false,
             "interval": "",
             "legendFormat": "RPC Received",
             "refId": "B"
           },
           {
-            "expr": "rate(nethermind_discovery_bytes_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+            "expr": "rate(nethermind_discovery_bytes_received[1m])*60",
             "hide": false,
             "interval": "",
             "legendFormat": "Dscv Sent",
             "refId": "C"
           },
           {
-            "expr": "rate(nethermind_discovery_bytes_sent{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+            "expr": "rate(nethermind_discovery_bytes_sent[1m])*60",
             "hide": false,
             "interval": "",
             "legendFormat": "Dscv Received",
             "refId": "D"
           },
           {
-            "expr": "rate(nethermind_p2pbytes_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+            "expr": "rate(nethermind_p2pbytes_received[1m])*60",
             "hide": false,
             "interval": "",
             "legendFormat": "P2P Received",
             "refId": "E"
           },
           {
-            "expr": "rate(nethermind_p2pbytes_sent{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+            "expr": "rate(nethermind_p2pbytes_sent[1m])*60",
             "hide": false,
             "interval": "",
             "legendFormat": "P2P Sent",
@@ -361,7 +361,7 @@
         "steppedLine": false,
         "targets": [
           {
-            "expr": "nethermind_version{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+            "expr": "nethermind_version",
             "interval": "",
             "legendFormat": "",
             "refId": "A"
@@ -465,7 +465,7 @@
             "pluginVersion": "7.5.3",
             "targets": [
               {
-                "expr": "nethermind_blocks_sealed{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_blocks_sealed",
                 "interval": "",
                 "legendFormat": "",
                 "refId": "A"
@@ -523,7 +523,7 @@
             "pluginVersion": "7.5.3",
             "targets": [
               {
-                "expr": "nethermind_failed_block_seals{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_failed_block_seals",
                 "interval": "",
                 "legendFormat": "",
                 "refId": "A"
@@ -584,7 +584,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_au_ra_step{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_au_ra_step",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "",
@@ -678,7 +678,7 @@
             "pluginVersion": "7.5.3",
             "targets": [
               {
-                "expr": "nethermind_can_produce_blocks{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_can_produce_blocks",
                 "interval": "",
                 "legendFormat": "",
                 "refId": "A"
@@ -733,7 +733,7 @@
             "pluginVersion": "7.5.3",
             "targets": [
               {
-                "expr": "nethermind_reported_malicious_misbehaviour{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_reported_malicious_misbehaviour",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "",
@@ -795,7 +795,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_sealed_transactions{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_sealed_transactions",
                 "hide": false,
                 "instant": false,
                 "interval": "",
@@ -890,7 +890,7 @@
             "pluginVersion": "7.5.3",
             "targets": [
               {
-                "expr": "nethermind_reported_benign_misbehaviour{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_reported_benign_misbehaviour",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "",
@@ -946,7 +946,7 @@
             "pluginVersion": "7.5.3",
             "targets": [
               {
-                "expr": "nethermind_validators_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_validators_count",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "",
@@ -1008,7 +1008,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_reveal_number{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_reveal_number",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "",
@@ -1108,7 +1108,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_emit_initiate_change{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_emit_initiate_change",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "",
@@ -1208,7 +1208,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_commit_hash_transaction{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_commit_hash_transaction",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "",
@@ -1322,14 +1322,14 @@
             "targets": [
               {
                 "exemplar": true,
-                "expr": "dotnet_total_memory_bytes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "dotnet_total_memory_bytes",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "Managed Memory",
                 "refId": "A"
               },
               {
-                "expr": " process_working_set_bytes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"} - dotnet_total_memory_bytes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": " process_working_set_bytes - dotnet_total_memory_bytes",
                 "legendFormat": "Unmanaged Memory",
                 "refId": "B"
               }
@@ -1426,7 +1426,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "deriv(dotnet_total_memory_bytes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m]) > 0",
+                "expr": "deriv(dotnet_total_memory_bytes[1m]) > 0",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Managed Memory",
@@ -1658,19 +1658,19 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_loaded_from_db_nodes_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_loaded_from_db_nodes_count",
                 "interval": "",
                 "legendFormat": "DB",
                 "refId": "A"
               },
               {
-                "expr": "nethermind_loaded_from_rlp_cache_nodes_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_loaded_from_rlp_cache_nodes_count",
                 "interval": "",
                 "legendFormat": "RLP Cache",
                 "refId": "B"
               },
               {
-                "expr": "nethermind_loaded_from_cache_nodes_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_loaded_from_cache_nodes_count",
                 "interval": "",
                 "legendFormat": "Node Cache",
                 "refId": "C"
@@ -1771,7 +1771,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_memory_used_by_cache{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_memory_used_by_cache",
                 "interval": "",
                 "legendFormat": "",
                 "refId": "A"
@@ -1866,20 +1866,20 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_committed_nodes_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_committed_nodes_count",
                 "interval": "",
                 "legendFormat": "Committed",
                 "refId": "G"
               },
               {
-                "expr": "nethermind_persisted_node_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_persisted_node_count",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "Persisted",
                 "refId": "A"
               },
               {
-                "expr": "nethermind_pruned_nodes_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_pruned_nodes_count",
                 "hide": true,
                 "instant": false,
                 "interval": "",
@@ -1887,27 +1887,27 @@
                 "refId": "B"
               },
               {
-                "expr": "nethermind_cached_nodes_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_cached_nodes_count",
                 "interval": "",
                 "legendFormat": "Cached",
                 "refId": "C"
               },
               {
-                "expr": "nethermind_replaced_nodes_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_replaced_nodes_count",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "Replaced",
                 "refId": "D"
               },
               {
-                "expr": "nethermind_pruned_persisted_nodes_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_pruned_persisted_nodes_count",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "Pruned Persisted",
                 "refId": "E"
               },
               {
-                "expr": "nethermind_pruned_transient_nodes_count{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_pruned_transient_nodes_count",
                 "instant": false,
                 "interval": "",
                 "legendFormat": "Pruned Transient",
@@ -2003,19 +2003,19 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_snapshot_persistence_time{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_snapshot_persistence_time",
                 "interval": "",
                 "legendFormat": "Persistence",
                 "refId": "A"
               },
               {
-                "expr": "nethermind_pruning_time{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_pruning_time",
                 "interval": "",
                 "legendFormat": "Pruning",
                 "refId": "B"
               },
               {
-                "expr": "nethermind_deep_pruning_time{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_deep_pruning_time",
                 "interval": "",
                 "legendFormat": "",
                 "refId": "C"
@@ -2127,7 +2127,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_last_block_processing_time_in_ms{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_last_block_processing_time_in_ms",
                 "interval": "",
                 "legendFormat": "",
                 "refId": "A"
@@ -2226,7 +2226,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_blocks{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])",
+                "expr": "rate(nethermind_blocks[1m])",
                 "format": "time_series",
                 "instant": false,
                 "interval": "",
@@ -2329,7 +2329,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_sync_peers{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_sync_peers",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -2428,14 +2428,14 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_state_synced{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_state_synced",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "State",
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_state_synced{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[60m])*3600",
+                "expr": "rate(nethermind_state_synced[60m])*3600",
                 "interval": "",
                 "legendFormat": "",
                 "refId": "B"
@@ -2533,19 +2533,19 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_fast_headers{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_fast_headers",
                 "interval": "",
                 "legendFormat": "Headers",
                 "refId": "A"
               },
               {
-                "expr": "nethermind_fast_bodies{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_fast_bodies",
                 "interval": "",
                 "legendFormat": "Bodies",
                 "refId": "B"
               },
               {
-                "expr": "nethermind_fast_receipts{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_fast_receipts",
                 "interval": "",
                 "legendFormat": "Receipts",
                 "refId": "C"
@@ -2648,7 +2648,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_blocks{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_blocks",
                 "refId": "A"
               }
             ],
@@ -2742,7 +2742,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "process_cpu_seconds_total{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "process_cpu_seconds_total",
                 "legendFormat": "Uptime",
                 "refId": "A"
               }
@@ -2859,7 +2859,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_json_rpc_requests{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_json_rpc_requests[1m])*60",
                 "format": "time_series",
                 "hide": true,
                 "instant": false,
@@ -2869,7 +2869,7 @@
                 "refId": "B"
               },
               {
-                "expr": "rate(nethermind_json_rpc_successes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_json_rpc_successes[1m])*60",
                 "format": "time_series",
                 "hide": false,
                 "intervalFactor": 1,
@@ -2877,7 +2877,7 @@
                 "refId": "C"
               },
               {
-                "expr": "rate(nethermind_json_rpc_errors{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_json_rpc_errors[1m])*60",
                 "format": "time_series",
                 "hide": false,
                 "intervalFactor": 1,
@@ -2885,14 +2885,14 @@
                 "refId": "E"
               },
               {
-                "expr": "rate(nethermind_json_rpc_request_deserialization_failures{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_json_rpc_request_deserialization_failures[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Deserialization Failures",
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_json_rpc_invalid_requests{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_json_rpc_invalid_requests[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Invalid Requests",
@@ -2989,7 +2989,7 @@
             "pluginVersion": "7.5.3",
             "targets": [
               {
-                "expr": "nethermind_json_rpc_requests{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_json_rpc_requests",
                 "format": "time_series",
                 "hide": false,
                 "instant": false,
@@ -2999,7 +2999,7 @@
                 "refId": "B"
               },
               {
-                "expr": "nethermind_json_rpc_successes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_json_rpc_successes",
                 "format": "time_series",
                 "hide": false,
                 "interval": "",
@@ -3008,7 +3008,7 @@
                 "refId": "C"
               },
               {
-                "expr": "nethermind_json_rpc_errors{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_json_rpc_errors",
                 "format": "time_series",
                 "hide": false,
                 "interval": "",
@@ -3017,7 +3017,7 @@
                 "refId": "E"
               },
               {
-                "expr": "nethermind_json_rpc_request_deserialization_failures{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_json_rpc_request_deserialization_failures",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -3025,7 +3025,7 @@
                 "refId": "A"
               },
               {
-                "expr": "nethermind_json_rpc_invalid_requests{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_json_rpc_invalid_requests",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -3102,7 +3102,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_beamed_transactions{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_beamed_transactions",
                 "interval": "",
                 "legendFormat": "Transactions",
                 "refId": "A"
@@ -3197,7 +3197,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_beamed_blocks{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_beamed_blocks",
                 "interval": "",
                 "legendFormat": "Blocks",
                 "refId": "A"
@@ -3292,7 +3292,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_beamed_requests{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_beamed_requests",
                 "interval": "",
                 "legendFormat": "Requests",
                 "refId": "A"
@@ -3387,7 +3387,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "nethermind_beamed_trie_nodes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+                "expr": "nethermind_beamed_trie_nodes",
                 "interval": "",
                 "legendFormat": "Trie Nodes",
                 "refId": "A"
@@ -3502,42 +3502,42 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_incoming_connections{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_incoming_connections[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Incoming Connections",
                 "refId": "F"
               },
               {
-                "expr": "rate(nethermind_outgoing_connections{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_outgoing_connections[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Outgoing Connections",
                 "refId": "E"
               },
               {
-                "expr": "rate(nethermind_handshakes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_handshakes[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Handshakes",
                 "refId": "G"
               },
               {
-                "expr": "rate(nethermind_hellos_sent{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_hellos_sent[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Hellos Sent",
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_hellos_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_hellos_received[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Hellos Received",
                 "refId": "B"
               },
               {
-                "expr": "rate(nethermind_statuses_sent{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_statuses_sent[1m])*60",
                 "format": "time_series",
                 "hide": false,
                 "intervalFactor": 1,
@@ -3545,7 +3545,7 @@
                 "refId": "C"
               },
               {
-                "expr": "rate(nethermind_statuses_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_statuses_received[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Statuses Received",
@@ -3645,7 +3645,7 @@
             "targets": [
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_pending_transactions_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_pending_transactions_received[1m])*60",
                 "format": "time_series",
                 "instant": false,
                 "interval": "",
@@ -3655,7 +3655,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_pending_transactions_known{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_pending_transactions_known[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -3663,7 +3663,7 @@
                 "refId": "F"
               },
               {
-                "expr": "rate(nethermind_pending_transactions_discarded{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_pending_transactions_discarded[1m])*60",
                 "format": "time_series",
                 "instant": false,
                 "intervalFactor": 1,
@@ -3672,7 +3672,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_pending_transactions_too_far_in_future{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_pending_transactions_too_far_in_future[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Too far in future",
@@ -3680,7 +3680,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_pending_transactions_too_low_fee{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_pending_transactions_too_low_fee[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Too low fee",
@@ -3688,7 +3688,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_pending_transactions_added{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_pending_transactions_added[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Added (all)",
@@ -3696,7 +3696,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_pending1559transactions_added{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_pending1559transactions_added[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Added (1559)",
@@ -3704,7 +3704,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_pending_transactions_evicted{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_pending_transactions_evicted[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Evicted",
@@ -3712,7 +3712,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_pending_transactions_sent{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_pending_transactions_sent[1m])*60",
                 "format": "time_series",
                 "instant": false,
                 "interval": "",
@@ -3722,7 +3722,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_pending_transactions_hashes_sent{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_pending_transactions_hashes_sent[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Sent hashes",
@@ -3822,42 +3822,42 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_too_many_peers_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_too_many_peers_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Too Many Peers",
                 "refId": "D"
               },
               {
-                "expr": "rate(nethermind_client_quitting_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_client_quitting_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Client Quitting",
                 "refId": "C"
               },
               {
-                "expr": "rate(nethermind_receive_message_timeout_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_receive_message_timeout_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Receive Timeouts",
                 "refId": "E"
               },
               {
-                "expr": "rate(nethermind_already_connected_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_already_connected_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Already Connected",
                 "refId": "G"
               },
               {
-                "expr": "rate(nethermind_breach_of_protocol_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_breach_of_protocol_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Breach of Protocol",
                 "refId": "F"
               },
               {
-                "expr": "rate(nethermind_incompatible_p2pdisconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_incompatible_p2pdisconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Incompatible P2P",
@@ -3871,42 +3871,42 @@
                 "refId": "H"
               },
               {
-                "expr": "rate(nethermind_unexpected_identity_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_unexpected_identity_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Unexpected Identity",
                 "refId": "I"
               },
               {
-                "expr": "rate(nethermind_useless_peer_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_useless_peer_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Useless Peer",
                 "refId": "J"
               },
               {
-                "expr": "rate(nethermind_diconnect_requested_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_diconnect_requested_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Requested",
                 "refId": "K"
               },
               {
-                "expr": "rate(nethermind_tcp_subsystem_error_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_tcp_subsystem_error_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "TCP Error",
                 "refId": "L"
               },
               {
-                "expr": "rate(nethermind_same_as_self_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_same_as_self_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Same as Self",
                 "refId": "M"
               },
               {
-                "expr": "rate(nethermind_other_disconnects{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_other_disconnects[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Other",
@@ -4006,7 +4006,7 @@
             "targets": [
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth62get_block_headers_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth62get_block_headers_received[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -4015,7 +4015,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth62block_headers_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth62block_headers_received[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -4024,7 +4024,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth62get_block_bodies_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth62get_block_bodies_received[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -4033,7 +4033,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth62block_bodies_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth62block_bodies_received[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -4042,7 +4042,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth62transactions_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth62transactions_received[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -4051,7 +4051,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth65get_pooled_transactions_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth65get_pooled_transactions_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Txs requests received eth65",
@@ -4059,7 +4059,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth65get_pooled_transactions_requested{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth65get_pooled_transactions_requested[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Txs requested eth65",
@@ -4067,7 +4067,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth65pooled_transactions_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth65pooled_transactions_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Txs received eth65",
@@ -4075,7 +4075,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth62new_block_hashes_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth62new_block_hashes_received[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -4084,7 +4084,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth62new_block_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth62new_block_received[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -4093,7 +4093,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth63get_node_data_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth63get_node_data_received[1m])*60",
                 "format": "time_series",
                 "instant": false,
                 "interval": "",
@@ -4103,14 +4103,14 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth63node_data_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth63node_data_received[1m])*60",
                 "interval": "",
                 "legendFormat": "NodeData eth63",
                 "refId": "J"
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth63get_receipts_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth63get_receipts_received[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -4119,7 +4119,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth63receipts_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth63receipts_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Receipts eth63",
@@ -4127,7 +4127,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66get_block_headers_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66get_block_headers_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "GetBlockHeaders eth66",
@@ -4135,7 +4135,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66block_headers_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66block_headers_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "BlockHeaders eth66",
@@ -4143,7 +4143,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66get_block_bodies_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66get_block_bodies_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "GetBlockBodies eth66",
@@ -4151,7 +4151,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66block_bodies_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66block_bodies_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "BlockBodies eth66",
@@ -4159,7 +4159,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66get_pooled_transactions_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66get_pooled_transactions_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Txs requests received eth66",
@@ -4167,7 +4167,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66get_pooled_transactions_requested{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66get_pooled_transactions_requested[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Txs requested eth66",
@@ -4175,7 +4175,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66pooled_transactions_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66pooled_transactions_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Txs received eth66",
@@ -4183,7 +4183,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66get_node_data_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66get_node_data_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "GetNodeData eth66",
@@ -4191,7 +4191,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66node_data_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66node_data_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "NodeData eth66",
@@ -4199,7 +4199,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66get_receipts_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66get_receipts_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "GetReceipts eth66",
@@ -4207,7 +4207,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_eth66receipts_received{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_eth66receipts_received[1m])*60",
                 "hide": false,
                 "interval": "",
                 "legendFormat": "Receipts eth66",
@@ -4319,14 +4319,14 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_receipts_db_reads{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[10s])",
+                "expr": "rate(nethermind_receipts_db_reads[10s])",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Reads",
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_receipts_db_writes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[10s])",
+                "expr": "rate(nethermind_receipts_db_writes[10s])",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Writes",
@@ -4423,14 +4423,14 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_code_db_reads{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_code_db_reads[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Reads",
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_code_db_writes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_code_db_writes[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Writes",
@@ -4527,14 +4527,14 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_state_tree_reads{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_state_tree_reads[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Reads",
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_state_tree_writes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_state_tree_writes[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Writes",
@@ -4631,14 +4631,14 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_block_infos_db_reads{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_block_infos_db_reads[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Reads",
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_block_infos_db_writes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_block_infos_db_writes[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Writes",
@@ -4735,7 +4735,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_state_db_reads{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_state_db_reads[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Reads",
@@ -4743,7 +4743,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_state_db_writes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_state_db_writes[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -4752,7 +4752,7 @@
               },
               {
                 "exemplar": true,
-                "expr": "rate(nethermind_state_db_in_pruning_writes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_state_db_in_pruning_writes[1m])*60",
                 "format": "time_series",
                 "hide": false,
                 "interval": "",
@@ -4855,14 +4855,14 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_storage_tree_reads{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_storage_tree_reads[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Reads",
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_storage_tree_writes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_storage_tree_writes[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Writes",
@@ -4961,21 +4961,21 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_tree_node_rlp_decodings{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_tree_node_rlp_decodings[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "RLP.Encode",
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_tree_node_rlp_encodings{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_tree_node_rlp_encodings[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "RLP.Decode",
                 "refId": "B"
               },
               {
-                "expr": "rate(nethermind_tree_node_hash_calculations{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_tree_node_hash_calculations[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Keccak",
@@ -5074,14 +5074,14 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_other_db_reads{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[10s])",
+                "expr": "rate(nethermind_other_db_reads[10s])",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Reads",
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_other_db_writes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[10s])",
+                "expr": "rate(nethermind_other_db_writes[10s])",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Writes",
@@ -5178,7 +5178,7 @@
             "steppedLine": false,
             "targets": [
               {
-                "expr": "rate(nethermind_blocks_db_reads{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_blocks_db_reads[1m])*60",
                 "format": "time_series",
                 "interval": "",
                 "intervalFactor": 1,
@@ -5186,7 +5186,7 @@
                 "refId": "A"
               },
               {
-                "expr": "rate(nethermind_blocks_db_writes{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}[1m])*60",
+                "expr": "rate(nethermind_blocks_db_writes[1m])*60",
                 "format": "time_series",
                 "intervalFactor": 1,
                 "legendFormat": "Writes",
@@ -5298,14 +5298,14 @@
         "targets": [
           {
             "exemplar": true,
-            "expr": "nethermind_dark_pool_ratio_level1{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+            "expr": "nethermind_dark_pool_ratio_level1",
             "interval": "",
             "legendFormat": "Level1 (not known)",
             "refId": "A"
           },
           {
             "exemplar": true,
-            "expr": "nethermind_dark_pool_ratio_level2{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+            "expr": "nethermind_dark_pool_ratio_level2",
             "hide": false,
             "interval": "",
             "legendFormat": "level2 (not pending)",
@@ -5432,7 +5432,7 @@
         "targets": [
           {
             "exemplar": true,
-            "expr": "nethermind_eip1559transactions_ratio{job=\"nethermind\",instance=\"$enode\",nethermind_group=\"$group\"}",
+            "expr": "nethermind_eip1559transactions_ratio",
             "interval": "",
             "legendFormat": "",
             "refId": "A"
