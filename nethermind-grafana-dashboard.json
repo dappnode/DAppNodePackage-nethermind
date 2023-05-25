@@ -5445,71 +5445,7 @@
     "refresh": false,
     "schemaVersion": 30,
     "style": "dark",
-    "tags": [],
-    "templating": {
-      "list": [
-        {
-          "allValue": null,
-          "current": {
-            "selected": false,
-            "text": "nethermind",
-            "value": "nethermind"
-          },
-          "datasource": "Prometheus",
-          "definition": "",
-          "description": null,
-          "error": null,
-          "hide": 0,
-          "includeAll": false,
-          "label": null,
-          "multi": false,
-          "name": "group",
-          "options": [],
-          "query": {
-            "query": "label_values(nethermind_group)",
-            "refId": "Prometheus-group-Variable-Query"
-          },
-          "refresh": 1,
-          "regex": "",
-          "skipUrlSync": false,
-          "sort": 0,
-          "tagValuesQuery": "",
-          "tagsQuery": "",
-          "type": "query",
-          "useTags": false
-        },
-        {
-          "allValue": null,
-          "current": {
-            "selected": false,
-            "text": "Mainnet Daniel",
-            "value": "Mainnet Daniel"
-          },
-          "datasource": "Prometheus",
-          "definition": "label_values({nethermind_group=\"$group\"}, instance)",
-          "description": null,
-          "error": null,
-          "hide": 0,
-          "includeAll": false,
-          "label": null,
-          "multi": false,
-          "name": "enode",
-          "options": [],
-          "query": {
-            "query": "label_values({nethermind_group=\"$group\"}, instance)",
-            "refId": "Prometheus-enode-Variable-Query"
-          },
-          "refresh": 1,
-          "regex": "",
-          "skipUrlSync": false,
-          "sort": 1,
-          "tagValuesQuery": "",
-          "tagsQuery": "",
-          "type": "query",
-          "useTags": false
-        }
-      ]
-    },
+    "tags": ["ethereum","execution-layer","nethermind"],
     "time": {
       "from": "now-5m",
       "to": "now"
