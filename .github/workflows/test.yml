@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build test
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: npx @dappnode/dappnodesdk build --skip_save
 
   e2e-test:
@@ -17,5 +17,5 @@ jobs:
     needs: build-test
     name: End to end tests
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: npx @dappnode/dappnodesdk@latest github-action test-end-to-end --errorLogsTimeout 120 --healthCheckUrl http://nethermind.public.dappnode:8545 --network mainnet
