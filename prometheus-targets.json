@@ -1,0 +1,11 @@
+[
+    {
+        "labels": {
+            "package": "nethermind.public.dappnode.eth",
+            "service": "nethermind"
+        },
+        "targets": [
+            "nethermind.public.dappnode:6060"
+        ]
+    }
+]
