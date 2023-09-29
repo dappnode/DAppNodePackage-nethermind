@@ -34,7 +34,7 @@ apt install -y curl
 JWT=$(cat $JWT_PATH)
 curl -X POST "http://my.dappnode/data-send?key=jwt&data=${JWT}"
 
-exec /nethermind/Nethermind.Runner \
+exec /nethermind/nethermind \
   --JsonRpc.Enabled=true \
   --JsonRpc.JwtSecretFile=${JWT_PATH} \
   --Init.BaseDbPath=/data \
