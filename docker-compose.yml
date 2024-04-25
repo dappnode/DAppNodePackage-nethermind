@@ -4,13 +4,13 @@ services:
     build:
       context: .
       args:
-        UPSTREAM_VERSION: 1.25.4
-    image: "nethermind.nethermind.public.dappnode.eth:1.0.9"
+        UPSTREAM_VERSION: 1.26.0
+    image: nethermind.nethermind.public.dappnode.eth:1.0.9
     restart: unless-stopped
     security_opt:
-      - "seccomp:unconfined"
+      - seccomp:unconfined
     volumes:
-      - "data:/data"
+      - data:/data
     environment:
       MODE: normal
       NETHERMIND_CONFIG: mainnet
@@ -26,8 +26,8 @@ services:
       NETHERMIND_HEALTHCHECKSCONFIG_UIENABLED: "true"
       EXTRA_OPTS: ""
     ports:
-      - "30404:30404/udp"
-      - "30404:30404/tcp"
+      - 30404:30404/udp
+      - 30404:30404/tcp
     ulimits:
       nofile:
         soft: 1000000
