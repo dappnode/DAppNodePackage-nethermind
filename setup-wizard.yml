@@ -143,3 +143,15 @@ fields:
     enum:
       - "true"
       - "false"
+  - id: PrunningConfigMode
+    target:
+      type: environment
+      name: NETHERMIND_PRUNINGCONFIG_MODE
+    title: Prunning Mode Configuration
+    description: >-
+      Sets pruning mode. Possible values: 'None', 'Memory', 'Full', 'Hybrid'. You can set up the rest of prunning variables in advanced mode. More information in https://docs.nethermind.io/nethermind/ethereum-client/configuration/pruning.
+    enum:
+      - "None"
+      - "Memory"
+      - "Full"
+      - "Hybrid"
