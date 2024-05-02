@@ -1,6 +1,6 @@
-# Nethermind DAppNode package
+# Nethermind Dappnode Package
 
-[![DAppNodeStore Available](https://img.shields.io/badge/DAppNodeStore-Available-brightgreen.svg)](http://my.dappnode/#/installer/nethermind.public.dappnode.eth)
+[![DAppNodeStore Available](https://img.shields.io/badge/DAppNodeStore-Available-brightgreen.svg)](http://my.dappnode/installer/public/nethermind.public.dappnode.eth)
 
 Light wrapper around the Nethermind Ethereum client
 

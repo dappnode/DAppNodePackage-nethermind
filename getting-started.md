@@ -1,6 +1,6 @@
-# Nethermind (Execution Client)
+# Nethermind Mainnet (Execution Client)
 
-Welcome to the Merged Mainnet Nethermind Execution Client.
+Welcome to the Mainnet Nethermind Execution Client.
 
 There are now two RPC APIs in Execution Clients:
 
