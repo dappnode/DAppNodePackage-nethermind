@@ -158,7 +158,7 @@ fields:
       service: nethermind
     title: Nethermind UI
     description: >-
-      If set to `true` then you will be able to access a UI where to check basic info from Nethermind client
+      If set to `true` then you will be able to access a UI where to check basic info from the Nethermind client.
     enum:
       - "true"
       - "false"
