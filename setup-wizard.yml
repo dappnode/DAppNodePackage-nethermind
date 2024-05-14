@@ -173,9 +173,13 @@ fields:
     title: Full Pruning Trigger Type
     description: >-
       The full pruning trigger which accepts config values like:
+      
       Manual: Triggered manually with JsonRPC call. (default)
+      
       StateDbSize: Trigger when the state DB size is above the threshold.
+      
       VolumeFreeSpace: Trigger when the free disk space where the state DB is stored is below the threshold.      
+      
     enum:
       - "Manual"
       - "StateDbSize"
