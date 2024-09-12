@@ -27,12 +27,14 @@ case "$_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_MAINNET" in
   ;;
 esac
 
-apt update
-apt install -y curl
-
-# Print the jwt to the dappmanager
-JWT=$(cat $JWT_PATH)
-curl -X POST "http://my.dappnode/data-send?key=jwt&data=${JWT}"
+# Check if curl is installed (not installed in ARM64 arch)
+if command -v curl >/dev/null 2>&1; then
+  # Print the jwt to the dappmanager
+  JWT=$(cat $JWT_PATH)
+  curl -X POST "http://my.dappnode/data-send?key=jwt&data=${JWT}"
+else
+  echo "curl is not installed in ARM64 arch. Skipping the JWT post to package info."
+fi
 
 exec /nethermind/nethermind \
   --JsonRpc.Enabled=true \
