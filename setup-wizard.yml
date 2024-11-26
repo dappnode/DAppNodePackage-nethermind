@@ -164,3 +164,38 @@ fields:
       - "false"
     default: "true"
     required: true
+
+  - id: PruningTriggerType
+    target:
+      type: environment
+      name: NETHERMIND_PRUNINGCONFIG_FULLPRUNINGTRIGGER
+      service: nethermind
+    title: Full Pruning Trigger Type
+    description: >-
+      The full pruning trigger which accepts config values like:
+      
+      
+      **Manual**: Triggered manually with JsonRPC call. (default)
+      
+      
+      **StateDbSize**: Trigger when the state DB size is above the threshold.
+
+      
+      **VolumeFreeSpace**: Trigger when the free disk space where the state DB is stored is below the threshold.            
+    enum:
+      - "Manual"
+      - "StateDbSize"
+      - "VolumeFreeSpace"
+    default: "Manual"
+    required: true
+
+  - id: PruningThresholdMb
+    target:
+      type: environment
+      name: NETHERMIND_PRUNINGCONFIG_FULLPRUNINGTHRESHOLDMB
+      service: nethermind
+    title: Full Pruning Threshold in Mb
+    description: >-
+      The threshold, in MB, to trigger full pruning. Depends on Mode and FullPruningTrigger. Defaults to 256000.
+    default: "256000"
+    required: true
